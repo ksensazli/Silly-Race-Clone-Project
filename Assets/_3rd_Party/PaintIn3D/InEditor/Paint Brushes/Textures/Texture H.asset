@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d88e0a6b1e2fd4d80f15fd0ea59ff2, type: 3}
+  m_Name: Texture H
+  m_EditorClassIdentifier: 
+  category: Textures
+  data:
+    shape: {fileID: 2800000, guid: 2a041cbfd204dd84ebc464108971e149, type: 3}
+    shapeChannel: 0
+    modifiers:
+      types:
+      - PaintIn3D.P3dModifyAngleRandom
+      - PaintIn3D.P3dModifyPositionRandom
+      - PaintIn3D.P3dModifyRadiusRandom
+      jsons:
+      - '{"preview":true,"unique":true,"min":-180.0,"max":180.0,"blend":0}'
+      - '{"preview":true,"unique":true,"radius":0.10000000149011612}'
+      - '{"preview":true,"unique":true,"min":0.6665999889373779,"max":1.5,"blend":0}'

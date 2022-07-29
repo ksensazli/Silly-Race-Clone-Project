@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Soap_Splat
+  m_Shader: {fileID: 4800000, guid: f21061d3ea233d1428623dc80f1c04a0, type: 3}
+  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: b72fab2eca25b0c4c956b1c74621f70f, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Heightmap:
+        m_Texture: {fileID: 2800000, guid: a79a0ea24f5598c41ae213811f476430, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1c36670b85e1c144b894531b8874c9fd, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: 0a6e55dfa96b55142885318478fb5cab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 2800000, guid: 599ec1d84a115584da56afd72a4a8adf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SplatDetail:
+        m_Texture: {fileID: 2800000, guid: 210b12d1859883d4288b545a215519e6, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _SplatMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BaseChannel: 0
+    - _BumpScale: 1.76
+    - _Channel: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 0.829
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0.05
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Offset: 0
+    - _Parallax: 0.0126
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SplatChannel: 0
+    - _SplatContrast: 10
+    - _SplatDetailStrength: 1.66
+    - _SplatOffset: 0.53
+    - _SplatScale: 1.36
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseChannel: {r: 1, g: 0, b: 0, a: 0}
+    - _BaseParallaxMap_Transform: {r: 1, g: 1, b: 0, a: 0}
+    - _BumpMap_Transform: {r: 10, g: 10, b: 0, a: 0}
+    - _Channel: {r: 1, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainTex_Transform: {r: 10, g: 10, b: 0, a: 0}
+    - _MetallicGlossMap_Transform: {r: 10, g: 10, b: 0, a: 0}
+    - _ParallaxMap_Transform: {r: 5, g: 5, b: 0, a: 0}
+    - _SplatChannel: {r: 1, g: 0, b: 0, a: 0}

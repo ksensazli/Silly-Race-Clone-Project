@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: b24e7ed8a88959f4797cb3d2ec6a654b
+timeCreated: 1530519411
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Car1_Chassis
+    100004: Car1_Chrome
+    100006: Car1_Under
+    100008: Car1_Body
+    100010: Car_Body
+    100012: Car_Chassis
+    100014: Car_Chrome
+    100016: Car_Tailpipe
+    100018: Car_TireBL
+    100020: Car_TireBR
+    100022: Car_TireFL
+    100024: Car_TireFR
+    100026: Car_Trim
+    100028: Car_WheelBL
+    100030: Car_WheelBR
+    100032: Car_WheelFL
+    100034: Car_WheelFR
+    100036: Car_Windows
+    400000: //RootNode
+    400002: Car1_Chassis
+    400004: Car1_Chrome
+    400006: Car1_Under
+    400008: Car1_Body
+    400010: Car_Body
+    400012: Car_Chassis
+    400014: Car_Chrome
+    400016: Car_Tailpipe
+    400018: Car_TireBL
+    400020: Car_TireBR
+    400022: Car_TireFL
+    400024: Car_TireFR
+    400026: Car_Trim
+    400028: Car_WheelBL
+    400030: Car_WheelBR
+    400032: Car_WheelFL
+    400034: Car_WheelFR
+    400036: Car_Windows
+    2300000: Car1_Chassis
+    2300002: Car1_Chrome
+    2300004: Car1_Under
+    2300006: Car1_Body
+    2300008: Car_Body
+    2300010: Car_Chassis
+    2300012: Car_Chrome
+    2300014: Car_Tailpipe
+    2300016: Car_TireBL
+    2300018: Car_TireBR
+    2300020: Car_TireFL
+    2300022: Car_TireFR
+    2300024: Car_Trim
+    2300026: Car_WheelBL
+    2300028: Car_WheelBR
+    2300030: Car_WheelFL
+    2300032: Car_WheelFR
+    2300034: Car_Windows
+    3300000: Car1_Chassis
+    3300002: Car1_Chrome
+    3300004: Car1_Under
+    3300006: Car1_Body
+    3300008: Car_Body
+    3300010: Car_Chassis
+    3300012: Car_Chrome
+    3300014: Car_Tailpipe
+    3300016: Car_TireBL
+    3300018: Car_TireBR
+    3300020: Car_TireFL
+    3300022: Car_TireFR
+    3300024: Car_Trim
+    3300026: Car_WheelBL
+    3300028: Car_WheelBR
+    3300030: Car_WheelFL
+    3300032: Car_WheelFR
+    3300034: Car_Windows
+    4300000: Car1_Chassis
+    4300002: Car1_Chrome
+    4300004: Car1_Under
+    4300006: Car1_Body
+    4300008: Car_Body
+    4300010: Car_Chrome
+    4300012: Car_Chassis
+    4300014: Car_TireFL
+    4300016: Car_Tailpipe
+    4300018: Car_WheelBL
+    4300020: Car_WheelFL
+    4300022: Car_TireFR
+    4300024: Car_WheelFR
+    4300026: Car_WheelBR
+    4300028: Car_TireBR
+    4300030: Car_TireBL
+    4300032: Car_Trim
+    4300034: Car_Windows
+    6400000: Car1_Chassis
+    6400002: Car1_Chrome
+    6400004: Car1_Under
+    6400006: Car1_Body
+    6400008: Car_Body
+    6400010: Car_Chassis
+    6400012: Car_Chrome
+    6400014: Car_Tailpipe
+    6400016: Car_TireBL
+    6400018: Car_TireBR
+    6400020: Car_TireFL
+    6400022: Car_TireFR
+    6400024: Car_Trim
+    6400026: Car_WheelBL
+    6400028: Car_WheelBR
+    6400030: Car_WheelFL
+    6400032: Car_WheelFR
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.02
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

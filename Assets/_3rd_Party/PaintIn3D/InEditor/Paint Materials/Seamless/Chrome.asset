@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba53ed8333fba59438e315f5e89dcca7, type: 3}
+  m_Name: Chrome
+  m_EditorClassIdentifier: 
+  category: Albedo
+  thumbnail: {fileID: 0}
+  style: 0
+  shape: {fileID: 0}
+  material: {fileID: 2100000, guid: a8f7706b338566d4c9a0d9943aa3bf17, type: 2}
+  template: {fileID: 11400000, guid: 667daab001a59714f8fdd6d7137f72c2, type: 2}
+  slots:
+  - Group:
+      index: -199
+    Texture: {fileID: 0}
+    Color: {r: 1, g: 1, b: 1, a: 1}
+  - Group:
+      index: -195
+    Texture: {fileID: 2800000, guid: 561b8cf6b6a4c714784637867d7f879d, type: 3}
+    Color: {r: 1, g: 1, b: 1, a: 1}
+  - Group:
+      index: -198
+    Texture: {fileID: 0}
+    Color: {r: 1, g: 1, b: 1, a: 1}
+  - Group:
+      index: -196
+    Texture: {fileID: 0}
+    Color: {r: 1, g: 1, b: 1, a: 1}

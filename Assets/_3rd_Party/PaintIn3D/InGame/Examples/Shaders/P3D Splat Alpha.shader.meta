@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f21061d3ea233d1428623dc80f1c04a0
+timeCreated: 1530670090
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _BumpMap: {instanceID: 0}
+  - _MetallicGlossMap: {instanceID: 0}
+  - _ParallaxMap: {instanceID: 0}
+  - _SplatMap: {instanceID: 0}
+  - _SplatDetail: {fileID: 2800000, guid: 210b12d1859883d4288b545a215519e6, type: 3}
+  - _BaseParallaxMap: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

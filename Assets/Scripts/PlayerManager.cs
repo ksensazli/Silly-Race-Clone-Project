@@ -21,11 +21,16 @@ public class PlayerManager : MonoBehaviour
     private bool _isPainting;
     private float _xPos = 0;
 
-    private void Awake()
+    private void OnEnable()
     {
         GameManager.OnLevelStarted += startGame;
         _anim = GetComponentInChildren<Animator>();
         _touchInput = GetComponent<touchInput>();
+    }
+
+    private void OnDisable() 
+    {
+        GameManager.OnLevelStarted -= startGame;
     }
 
     void FixedUpdate()
@@ -137,6 +142,7 @@ public class PlayerManager : MonoBehaviour
         if(other.tag == "EndTrigger")
         {
             _isPainting = true;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
             GameManager.OnEndReached?.Invoke();
             _anim.SetTrigger("Idle");
         }
@@ -167,7 +173,7 @@ public class PlayerManager : MonoBehaviour
         {
             Vector3 info = collisionInfo.contacts[0].normal;
             info.y=0;
-            rb.AddForce(info*500);
+            rb.AddForce(info*600);
             DOVirtual.DelayedCall(.5f, ()=>rb.velocity = Vector3.zero);
         }
 

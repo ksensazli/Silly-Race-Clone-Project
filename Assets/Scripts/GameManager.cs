@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
         _isStart = true;
     }
 
-    private void Update() 
+    private void FixedUpdate() 
     {
         if (!_isStart)
         {

@@ -57,6 +57,7 @@ public class OpponentManager : MonoBehaviour
             _agent.isStopped = true;
             _agent.enabled = false;
             _agent.velocity = Vector3.zero;
+            _rigidBody.constraints = RigidbodyConstraints.FreezeAll;
             _anim.SetTrigger("Idle");
         }
     }

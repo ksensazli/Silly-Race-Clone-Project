@@ -44,10 +44,10 @@ public class OpponentManager : MonoBehaviour
             _isCheck = false;
             _agent.isStopped = true;
             _agent.velocity = Vector3.zero;
-            _rigidBody.velocity= Vector3.zero;
             _rigidBody.angularVelocity=Vector3.zero;
-            //transform.parent = other.transform;
-            transform.DOMoveZ(105f, 3f);
+            transform.parent = other.transform;
+            _rigidBody.velocity= Vector3.forward * 20;
+            transform.RotateAround(transform.parent.position,Vector3.down * 20, _rotationSpeed * Time.fixedDeltaTime);
             _rigidBody.constraints = RigidbodyConstraints.FreezeRotation;
             _rigidBody.useGravity=false;
             _agent.enabled = false;
@@ -68,7 +68,9 @@ public class OpponentManager : MonoBehaviour
             _isCheck = true;
             _agent.enabled=true;
             _agent.isStopped = false;
+            _rigidBody.velocity = Vector3.zero;
             _rigidBody.constraints = RigidbodyConstraints.None;
+            _rigidBody.constraints = RigidbodyConstraints.FreezeRotationY;
             transform.parent = null;
             transform.position = new Vector3(0,0,transform.position.z);
             _agent.SetDestination(_target2.position);

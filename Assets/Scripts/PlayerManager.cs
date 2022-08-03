@@ -83,7 +83,7 @@ public class PlayerManager : MonoBehaviour
         if(rb.position.y <= -2f)
         {
             //It is the function that allows us to reload (restart) the scene.
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            DOVirtual.DelayedCall(1f, ()=>SceneManager.LoadScene(SceneManager.GetActiveScene().name));
         }
     }
 
@@ -138,14 +138,6 @@ public class PlayerManager : MonoBehaviour
             transform.parent = other.transform;
             _isOnPlatform = true;
         }
-
-        if(other.tag == "EndTrigger")
-        {
-            _isPainting = true;
-            rb.constraints = RigidbodyConstraints.FreezeAll;
-            GameManager.OnEndReached?.Invoke();
-            _anim.SetTrigger("Idle");
-        }
     }
 
     //It is the function where various trigger exit events are written.
@@ -159,7 +151,17 @@ public class PlayerManager : MonoBehaviour
             transform.position = new Vector3(transform.position.x, 0, transform.position.z);
             rb.useGravity = false;
             rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
+
+        if(other.tag == "EndTrigger")
+        {
+            _isPainting = true;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            GameManager.OnEndReached?.Invoke();
+            _anim.SetTrigger("Idle");
+        }
+
         if(other.tag == "Ground")
         {
             rb.useGravity = true;

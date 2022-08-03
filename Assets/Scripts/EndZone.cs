@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class EndZone : MonoBehaviour
@@ -7,12 +8,12 @@ public class EndZone : MonoBehaviour
     [SerializeField] private ParticleSystem _confetties;
     void OnEnable()
     {
-        GameManager.OnEndReached += playConfetti;
+        GameManager.OnLevelCompleted += playConfetti;
     }
 
     void OnDisable() 
     {
-        GameManager.OnEndReached -= playConfetti;
+        GameManager.OnLevelCompleted -= playConfetti;
     }
 
     private void playConfetti()

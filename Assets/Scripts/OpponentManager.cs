@@ -54,11 +54,7 @@ public class OpponentManager : MonoBehaviour
         }
         if(other.tag == "EndTrigger")
         {
-            _agent.isStopped = true;
-            _agent.enabled = false;
-            _agent.velocity = Vector3.zero;
-            _rigidBody.constraints = RigidbodyConstraints.FreezeAll;
-            _anim.SetTrigger("Idle");
+            _rigidBody.detectCollisions = false;
         }
     }
     private void OnTriggerExit(Collider other) 
@@ -74,6 +70,14 @@ public class OpponentManager : MonoBehaviour
             transform.parent = null;
             transform.position = new Vector3(0,0,transform.position.z);
             _agent.SetDestination(_target2.position);
+        }
+        if(other.tag == "EndTrigger")
+        {
+            _agent.isStopped = true;
+            _agent.enabled = false;
+            _agent.velocity = Vector3.zero;
+            _rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+            _anim.SetTrigger("Idle");
         }
     }
 
@@ -98,6 +102,7 @@ public class OpponentManager : MonoBehaviour
         if (other.collider.tag == "Obstacle")
         {
             transform.position = Vector3.zero;
+            Debug.Log(transform.name + " and this position is: " + transform.position);
         }
     }
 }

@@ -98,9 +98,9 @@ public class OpponentManager : MonoBehaviour
                 transform.parent = null;
                 transform.position = new Vector3(0,0,transform.position.z);
                 _agent.SetDestination(_target2.position);
-            }
-            
+            }            
         }
+
         if(other.tag == "EndTrigger")
         {
             _agent.isStopped = true;

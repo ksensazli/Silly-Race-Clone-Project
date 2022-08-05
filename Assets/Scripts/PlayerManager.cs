@@ -162,6 +162,7 @@ public class PlayerManager : MonoBehaviour
 
         if(other.tag == "Ground")
         {
+            rb.constraints = RigidbodyConstraints.None;
             rb.useGravity = true;
         }
     }

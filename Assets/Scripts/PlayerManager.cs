@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float _slideSpeed;
     [SerializeField] private float _LerpSpeed;
     [SerializeField] private float _rotationSpeed;
+    [SerializeField] private ParticleSystem _explosion;
     private touchInput _touchInput;
     private Vector3 _forwardMoveAmount;
     private Animator _anim;
@@ -172,7 +173,7 @@ public class PlayerManager : MonoBehaviour
         {
             Vector3 info = collisionInfo.contacts[0].normal;
             info.y=0;
-            rb.AddForce(info*600);
+            rb.AddForce(info*500);
             DOVirtual.DelayedCall(.5f, ()=>rb.velocity = Vector3.zero);
         }
 
@@ -186,6 +187,7 @@ public class PlayerManager : MonoBehaviour
 
         if (collisionInfo.collider.tag == "Obstacle")
         {
+            _explosion.Play();
             checkEndGame();
         }
     }

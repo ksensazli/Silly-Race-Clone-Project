@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
@@ -18,6 +16,7 @@ public class OpponentManager : MonoBehaviour
     {
         GameManager.OnLevelStarted += startMove;
         GameManager.OnLevelCompleted += endGame;
+
         _anim = GetComponentInChildren<Animator>();
         
         if(!_isCheck)
@@ -35,6 +34,8 @@ public class OpponentManager : MonoBehaviour
 
     private void startMove()
     {
+        // Although there is no problem when starting the first move; when opponent characters collide 
+        // with an obstacle and start again, the following codes are used to reset the force and motion left over from the previous collision.
         _rigidBody.velocity = Vector3.zero;
         _rigidBody.angularVelocity = Vector3.zero;
         _rigidBody.constraints = RigidbodyConstraints.FreezeRotationY;
@@ -42,6 +43,7 @@ public class OpponentManager : MonoBehaviour
         _anim.SetTrigger("Run");
     }
 
+    //It is the function where various trigger enter events are written.
     private void OnTriggerEnter(Collider other) 
     {
         if(other.tag == "RotatingPlatform")
@@ -52,19 +54,26 @@ public class OpponentManager : MonoBehaviour
             _rigidBody.angularVelocity=Vector3.zero;
             _rigidBody.constraints = RigidbodyConstraints.FreezeRotation;
             transform.parent = other.transform;
+
+            //The for loop is used to ensure that the Opponent Characters have a random transition rate.
             for(int i=0; i<10; i++)
             {
                 _opponentRotation = Random.Range(-1f, 7f);
                 _rigidBody.velocity= Vector3.forward * 15 + Vector3.left * _opponentRotation;
             }
+
             _rigidBody.useGravity = false;
             _agent.enabled = false;
         }
+
+        //The following function is used so that the characters do not push each other when the finish line is reached (since we are using a rigidbody).
         if(other.tag == "EndTrigger")
         {
             _rigidBody.detectCollisions = false;
         }
     }
+
+    //It is the function where various trigger exit events are written.
     private void OnTriggerExit(Collider other) 
     {
        if(other.transform.tag =="RotatingPlatform")
@@ -102,10 +111,12 @@ public class OpponentManager : MonoBehaviour
         }
     }
 
+    //It is the function where various collision enter events are written.
     private void OnCollisionEnter(Collision other) 
     {
         if (other.collider.tag == "Rotator")
         {
+            //This function is used to obtain the normal (perpendicular to it) of the object hit by the character.
             Vector3 info = other.contacts[0].normal;
             info.y=0;
             _rigidBody.AddForce(info*500);
@@ -131,6 +142,7 @@ public class OpponentManager : MonoBehaviour
         }
     }
 
+    //It stops the movement of all characters when the player completes the coloring and finishes the level.
     private void endGame()
     {
         _agent.enabled = false;

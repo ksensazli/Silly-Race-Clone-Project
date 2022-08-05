@@ -163,6 +163,13 @@
      <Compile Include="Assets\_3rd_Party\PaintIn3D\InEditor\P3dPainter_Materials.cs" />
      <Compile Include="Assets\Scripts\ObstacleScripts\RotatingPlatformObject.cs" />
      <Compile Include="Assets\_3rd_Party\PaintIn3D\InGame\Scripts\P3dPaintableTextureMonitorMask.cs" />
+     <Compile Include="Assets\_3rd_Party\Pixel Play\Scripts\OffScreenIndicator\OffScreenIndicator.cs" />
+     <Compile Include="Assets\_3rd_Party\Pixel Play\Scripts\OffScreenIndicator\BoxObjectPool.cs" />
+     <Compile Include="Assets\_3rd_Party\Pixel Play\Scripts\OffScreenIndicator\Target.cs" />
+     <Compile Include="Assets\_3rd_Party\Pixel Play\Scripts\OffScreenIndicator\OffScreenIndicatorCore.cs" />
+     <Compile Include="Assets\_3rd_Party\Pixel Play\Scripts\OffScreenIndicator\ArrowObjectPool.cs" />
+     <Compile Include="Assets\_3rd_Party\Pixel Play\Scripts\OffScreenIndicator\Indicator.cs" />
+     <Compile Include="Assets\_3rd_Party\Pixel Play\Scripts\ExtendedFlycam.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\_3rd_Party\PaintIn3D\InGame\Examples\Shaders\P3D Skybox.shader" />
@@ -799,6 +806,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:\Users\MONSTER\Demo Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:\Users\MONSTER\Demo Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\MONSTER\Demo Project\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>

@@ -13,5 +13,5 @@ public class HalfDonutObject : MonoBehaviour
     {
         _movingStick.DOLocalMoveX(_targetX,_movementDuration)
             .SetLoops(-1,LoopType.Yoyo);
-    } 
+    }
 }

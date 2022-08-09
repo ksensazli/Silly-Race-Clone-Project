@@ -1,1 +1,1 @@
-# Panteon-Project
+# Silly Race (Clone) Project

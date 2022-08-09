@@ -1,5 +1,7 @@
 # Silly Race (Clone) Project
-There are still some deficiencies in the mechanics in the clone project I have done. It is under development. Various third party plugins were used while developing the project. Some of those: <br />
+There are still some deficiencies in the mechanics in the clone project I have done. It is under development.
+
+Various third party plugins were used while developing the project. Some of those: <br />
 -DOTween <br />
 -Cinemachine <br />
 -SkyBox Assets <br />
